@@ -4,32 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      #video-container {
-        position: relative;
-      }
-
-      video::-webkit-media-text-track-container {
-        position: absolute;
-        bottom: 10px;
-        width: 100%;
-        text-align: center;
-      }
-
-      video::-webkit-media-text-track-display {
-        background-color: rgba(0, 0, 0, 0.7);
-        color: white;
-        padding: 5px;
-        font-size: 16px;
-      }
-    </style>
   </head>
   <body>
-    <video controls width="500" height="400">
+    <video controls width="700" height="400">
       <track kind="captions" src="captions.vtt" srclang="en" label="English" />
-      <track kind="captions" src="caption.vtt" srclang="en" label="hindi" />
-
-      <source src="sub1.mp4" type="video/mp4" />
+      <source
+        src="https://api.onedrive.com/v1.0/shares/s!AtbDU6WSkdycoGU2fUuihgpv1kf6/root/content"
+        type="video/mp4"
+      />
     </video>
   </body>
 </html>
